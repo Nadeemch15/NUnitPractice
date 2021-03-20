@@ -14,12 +14,12 @@ namespace AutomationTestingNov
     [TestFixture]
     public class Test2
     {
-        //[Test]
-        //public void TestClickLink()
-        //{
-        //    IWebDriver driver = new ChromeDriver();
-        //    driver.Navigate().GoToUrl("http://the-internet.herokuapp.com/");
-        //    driver.FindElement(By.XPath("//a[text()='A/B Testing']")).Click();
+        [Test]
+        public void TestClickLink()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://the-internet.herokuapp.com/";
+            driver.FindElement(By.XPath("//a[text()='A/B Testing']")).Click();
 
         //}
         //[Test]
