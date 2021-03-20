@@ -33,8 +33,29 @@ namespace AutomationTestingNov
         //    driver.FindElement(By.XPath("//button[text()='Add Element']")).Click();
         //}
 
+            // I have made changes here
+
+       // [Test];
+        //[Test]
+        //public void TestAddRemoveButton()
+        //{
+        //    IWebDriver driver = new ChromeDriver();
+        //    string url = "http://the-internet.herokuapp.com/";
+        //    driver.urNavigate().GoToUrl(url);
+        //    driver.FindElement(By.XPath("//a[text()='Add/Remove Elements']")).Click();
+        //    driver.FindElement(By.XPath("//button[text()='Add Element']")).Click();
+        //}
         [Test]
         public void CheckBox()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://the-internet.herokuapp.com/";
+            driver.FindElement(By.XPath("//a[contains(text(),'Checkboxes')]")).Click();
+            driver.FindElement(By.XPath("//body/div[2]/div[1]/div[1]/form[1]/input[1]")).Click();
+        }
+
+        [Test]
+        public void CheckBox1()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "http://the-internet.herokuapp.com/";
